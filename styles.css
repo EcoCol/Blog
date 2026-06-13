@@ -60,7 +60,7 @@ body {
 
   background-image: 
     linear-gradient(rgba(255, 250, 240, 0.85), rgba(255, 250, 240, 0.85)), /* Capa aclaradora para que no tape el texto */
-    url('images/fondo.jpg');                                              /* Ruta a tu imagen */
+    url('images/bg.jpg');                                              /* Ruta a tu imagen */
   
     background-size: cover;
   background-position: center;
