@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EcoPeques – Aventuras para cuidar el planeta</title>
+  <meta name="description" content="Blog infantil sobre medio ambiente: reciclaje, animales, energía y manualidades para cuidar el planeta jugando.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;600;700;800&family=Quicksand:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="#home" class="logo">
+        <span class="logo-mark" aria-hidden="true">🌍</span>
+        <span class="logo-text">EcoPeques</span>
+      </a>
+
+      <nav class="main-nav" aria-label="Navegación principal">
+        <a href="#home" class="nav-link" data-route="home">Inicio</a>
+        <a href="#categorias" class="nav-link" data-route="categorias">Categorías</a>
+        <a href="#sobre" class="nav-link" data-route="sobre">Sobre mí</a>
+        <a href="#contacto" class="nav-link" data-route="contacto">Contacto</a>
+      </nav>
+
+      <button class="nav-toggle" aria-label="Abrir menú" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main id="app" class="container" role="main"></main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>🌱 EcoPeques — Cuidando el planeta, una aventura a la vez.</p>
+    </div>
+  </footer>
+
+  <script src="posts-data.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
