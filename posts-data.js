@@ -39,7 +39,6 @@ const CATEGORIES = [
   { name: "Energía",      color: "sun",   emoji: "💡" },
   { name: "Manualidades", color: "berry", emoji: "🌻" },
   { name: "Naturaleza",   color: "sky",   emoji: "🌳" },
-   { name: "Números",    color: "leaf",   emoji: "💡"},
 ];
 
 const POSTS = [
