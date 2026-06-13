@@ -49,6 +49,7 @@ html {
 }
 
 body {
+ body {
   margin: 0;
   font-family: var(--font-body);
   color: var(--color-ink);
@@ -56,14 +57,16 @@ body {
   line-height: 1.65;
   -webkit-font-smoothing: antialiased;
   background-color: var(--color-cream);
-  background-image:
-    radial-gradient(circle at 6% 10%, rgba(111, 207, 110, 0.22), transparent 38%),
-    radial-gradient(circle at 94% 6%, rgba(255, 210, 63, 0.22), transparent 38%),
-    radial-gradient(circle at 90% 92%, rgba(79, 198, 232, 0.18), transparent 42%),
-    radial-gradient(circle at 8% 90%, rgba(255, 140, 97, 0.18), transparent 38%),
-    radial-gradient(circle at 50% 50%, rgba(255, 111, 165, 0.10), transparent 55%);
-  background-attachment: fixed;
+
+  background-image: 
+    linear-gradient(rgba(255, 250, 240, 0.85), rgba(255, 250, 240, 0.85)), /* Capa aclaradora para que no tape el texto */
+    url('images/fondo.jpg');                                              /* Ruta a tu imagen */
+  
+    background-size: cover;
+  background-position: center;
   background-repeat: no-repeat;
+  background-attachment: fixed;
+}
 }
 
 h1, h2, h3, h4 {
