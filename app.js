@@ -1,9 +1,9 @@
 /* ========================================================================
    APP.JS
    Router muy simple basado en el "hash" de la URL (#home, #post/slug, etc.)
-   Lee todo el contenido de POSTS y CATEGORIES (definidos en posts-data.js)
+   Lee todo el contenido de POSTS y CATEGORIES desde posts.json
    y arma cada página. No necesitás tocar este archivo para agregar posts:
-   eso se hace en posts-data.js.
+   eso se hace desde admin.html (o editando posts.json directamente).
    ======================================================================== */
 
 const app = document.getElementById("app");
@@ -15,6 +15,46 @@ const MONTHS = [
   "enero", "febrero", "marzo", "abril", "mayo", "junio",
   "julio", "agosto", "septiembre", "octubre", "noviembre", "diciembre",
 ];
+
+let CATEGORIES = [];
+let POSTS = [];
+let SETTINGS = {};
+
+const DEFAULT_SETTINGS = {
+  siteName: "EcoPeques",
+  logoEmoji: "🌍",
+  heroTitle: "Aventuras para cuidar nuestro planeta",
+  heroText: "Cuentos, datos curiosos y manualidades para que cuidar la naturaleza sea parte del juego de todos los días.",
+  aboutText: "¡Hola! Somos EcoPeques, un rincón pensado para que las infancias descubran, jugando, lo importante que es cuidar nuestro planeta.",
+  contactEmail: "hola@ecopeques.example",
+  instagram: "",
+  youtube: "",
+};
+
+async function loadData() {
+  const response = await fetch("posts.json");
+  if (!response.ok) {
+    throw new Error("No se pudo cargar posts.json");
+  }
+  const data = await response.json();
+  CATEGORIES = data.categories || [];
+  POSTS = data.posts || [];
+  SETTINGS = { ...DEFAULT_SETTINGS, ...(data.settings || {}) };
+}
+
+function applySiteSettings() {
+  document.title = `${SETTINGS.siteName} – ${SETTINGS.heroTitle}`;
+
+  const logoMark = document.querySelector(".logo-mark");
+  const logoText = document.querySelector(".logo-text");
+  if (logoMark) logoMark.textContent = SETTINGS.logoEmoji;
+  if (logoText) logoText.textContent = SETTINGS.siteName;
+
+  const footerText = document.querySelector(".footer-inner p");
+  if (footerText) {
+    footerText.textContent = `${SETTINGS.logoEmoji} ${SETTINGS.siteName} — Cuidando el planeta, una aventura a la vez.`;
+  }
+}
 
 function formatDate(isoDate) {
   const [year, month, day] = isoDate.split("-").map(Number);
@@ -61,10 +101,9 @@ function renderHome() {
         <div class="blob blob--coral"></div>
       </div>
       <div class="hero-content">
-        <span class="hero-eyebrow">🌍 Bienvenido a EcoPeques</span>
-        <h1>Aventuras para cuidar nuestro planeta</h1>
-        <p>Cuentos, datos curiosos y manualidades para que cuidar la
-        naturaleza sea parte del juego de todos los días.</p>
+        <span class="hero-eyebrow">${SETTINGS.logoEmoji} Bienvenido a ${SETTINGS.siteName}</span>
+        <h1>${SETTINGS.heroTitle}</h1>
+        <p>${SETTINGS.heroText}</p>
       </div>
     </section>
 
@@ -161,33 +200,35 @@ function renderPost(slug) {
 }
 
 function renderSobre() {
+  const paragraphs = (SETTINGS.aboutText || "")
+    .split(/\n\s*\n/)
+    .map((p) => p.trim())
+    .filter(Boolean)
+    .map((p) => `<p>${p}</p>`)
+    .join("");
+
   app.innerHTML = `
     <div class="page-header">
       <span class="hero-eyebrow">💚 Nuestra misión</span>
-      <h1>Sobre EcoPeques</h1>
+      <h1>Sobre ${SETTINGS.siteName}</h1>
     </div>
 
     <div class="about-wrap">
       <div class="about-emoji-row" aria-hidden="true">
         <span>🌍</span><span>🌱</span><span>🦋</span><span>♻️</span>
       </div>
-      <p>¡Hola! Somos <strong>EcoPeques</strong>, un rincón pensado para que
-      las infancias descubran, jugando, lo importante que es cuidar nuestro
-      planeta.</p>
-      <p>Acá vas a encontrar historias, datos curiosos sobre animales y
-      plantas, ideas para ahorrar energía y manualidades para crear cosas
-      nuevas con materiales que ya tenés en casa.</p>
-      <p>Creemos que los cambios grandes empiezan con pequeñas acciones: una
-      luz que se apaga, una semilla que se planta, una botella que se
-      recicla. ¡Cada peque cuenta!</p>
-      <p>Si sos mamá, papá, docente o simplemente curioso, te invitamos a
-      leer las publicaciones junto a los más chicos y animarse a hacer las
-      actividades en familia.</p>
+      ${paragraphs}
     </div>
   `;
 }
 
 function renderContacto() {
+  const socialLinks = [
+    SETTINGS.instagram ? `<a href="${SETTINGS.instagram}" target="_blank" rel="noopener">📷 Instagram</a>` : "",
+    SETTINGS.youtube ? `<a href="${SETTINGS.youtube}" target="_blank" rel="noopener">🎥 YouTube</a>` : "",
+    SETTINGS.contactEmail ? `<a href="mailto:${SETTINGS.contactEmail}">📧 ${SETTINGS.contactEmail}</a>` : "",
+  ].join("");
+
   app.innerHTML = `
     <div class="page-header">
       <span class="hero-eyebrow">✉️ Hablemos</span>
@@ -217,9 +258,7 @@ function renderContacto() {
       </form>
 
       <div class="contact-socials">
-        <a href="#" target="_blank" rel="noopener">📷 Instagram</a>
-        <a href="#" target="_blank" rel="noopener">🎥 YouTube</a>
-        <a href="mailto:hola@ecopeques.example">📧 hola@ecopeques.example</a>
+        ${socialLinks}
       </div>
     </div>
   `;
@@ -245,6 +284,19 @@ function renderNotFound() {
       <h1>No encontramos esa página</h1>
       <p>Parece que esta aventura todavía no existe.</p>
       <p><a class="btn" href="#home">Volver al inicio</a></p>
+    </div>
+  `;
+}
+
+function renderLoadError() {
+  app.innerHTML = `
+    <div class="page-header">
+      <span class="hero-eyebrow">⚠️ Ups...</span>
+      <h1>No pudimos cargar las publicaciones</h1>
+      <p>Revisá que el archivo <code>posts.json</code> esté en la misma
+      carpeta que <code>index.html</code> y que el sitio se esté sirviendo
+      desde un servidor web (no abriendo el archivo directamente con
+      doble clic).</p>
     </div>
   `;
 }
@@ -297,7 +349,17 @@ function router() {
 }
 
 window.addEventListener("hashchange", router);
-window.addEventListener("DOMContentLoaded", router);
+
+(async function init() {
+  try {
+    await loadData();
+  } catch (err) {
+    renderLoadError();
+    return;
+  }
+  applySiteSettings();
+  router();
+})();
 
 navToggle.addEventListener("click", () => {
   const isOpen = mainNav.classList.toggle("is-open");

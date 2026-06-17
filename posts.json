@@ -1,0 +1,77 @@
+{
+  "categories": [
+    {
+      "name": "Reciclaje",
+      "color": "leaf",
+      "emoji": "♻️"
+    },
+    {
+      "name": "Animales",
+      "color": "coral",
+      "emoji": "🦔"
+    },
+    {
+      "name": "Energía",
+      "color": "sun",
+      "emoji": "💡"
+    },
+    {
+      "name": "Manualidades",
+      "color": "berry",
+      "emoji": "🌻"
+    },
+    {
+      "name": "Naturaleza",
+      "color": "sky",
+      "emoji": "🌳"
+    }
+  ],
+  "posts": [
+    {
+      "slug": "reciclaje-divertido",
+      "title": "¿Qué es el reciclaje y por qué es una superaventura?",
+      "category": "Reciclaje",
+      "date": "2026-06-01",
+      "emoji": "♻️",
+      "excerpt": "Descubrí cómo la basura puede transformarse en cosas nuevas, ¡y cómo vos podés ser parte de esa magia todos los días!",
+      "content": "\n      <p>¿Sabías que muchas cosas que tiramos a la basura pueden transformarse en\n      objetos nuevos? A esa magia la llamamos <strong>reciclaje</strong>, ¡y vos\n      podés ser parte de ella!</p>\n\n      <p>Cuando separamos la basura en distintos colores de tachos, le damos a\n      cada material la oportunidad de tener una segunda vida:</p>\n\n      <ul>\n        <li>🟦 <strong>Papel y cartón:</strong> pueden convertirse en cuadernos nuevos.</li>\n        <li>🟨 <strong>Plástico:</strong> puede transformarse en juguetes o mochilas.</li>\n        <li>🟩 <strong>Vidrio:</strong> ¡se puede derretir y usar una y otra vez!</li>\n        <li>🟥 <strong>Metales:</strong> las latitas pueden volver a ser bicicletas.</li>\n      </ul>\n\n      <p>La próxima vez que termines de tomar un jugo, en vez de tirar el\n      envase a cualquier tacho, pensá: <strong>\"¿A qué tacho de color\n      pertenezco?\"</strong> Así ayudás a que ese material empiece su próxima\n      aventura.</p>\n\n      <p>¡Sos un superhéroe del planeta cada vez que reciclás! 🦸</p>\n    "
+    },
+    {
+      "slug": "heroes-del-bosque",
+      "title": "Los héroes secretos del bosque",
+      "category": "Animales",
+      "date": "2026-06-04",
+      "emoji": "🦔",
+      "excerpt": "Hay animales pequeñitos que cumplen tareas gigantes para que el bosque esté sano. ¡Conocelos!",
+      "content": "\n      <p>En cada bosque viven pequeños héroes que trabajan en silencio para que\n      todo funcione bien. ¡Vamos a conocer a algunos!</p>\n\n      <p><strong>🐝 Las abejas:</strong> vuelan de flor en flor llevando polen.\n      Gracias a ellas, las plantas pueden crecer frutas y semillas nuevas.</p>\n\n      <p><strong>🐿️ Las ardillas:</strong> entierran semillas para comer\n      después... ¡pero a veces se olvidan! Esas semillas se convierten en\n      árboles nuevos.</p>\n\n      <p><strong>🪱 Las lombrices:</strong> viven bajo tierra y la van\n      removiendo, haciendo que la tierra sea más rica para que las plantas\n      crezcan fuertes.</p>\n\n      <p>Cada animal, por más pequeño que sea, tiene una misión importante.\n      Por eso, cuidar su hogar (¡el bosque!) es cuidarlos a ellos también.</p>\n\n      <p>💚 <strong>Misión EcoPeques:</strong> la próxima vez que veas un\n      bichito en el jardín, observalo un ratito antes de espantarlo. ¡Quizás\n      esté en medio de una misión súper importante!</p>\n    "
+    },
+    {
+      "slug": "campeones-del-ahorro-de-energia",
+      "title": "Cómo convertirte en un campeón del ahorro de energía",
+      "category": "Energía",
+      "date": "2026-06-07",
+      "emoji": "💡",
+      "excerpt": "Apagar una luz puede parecer algo chiquito, pero sumando pequeñas acciones logramos grandes cambios. ¡Sumate al desafío!",
+      "content": "\n      <p>La energía que usamos en casa (para prender luces, cargar la tablet o\n      ver tele) muchas veces viene de procesos que generan humo y afectan al\n      planeta. Por suerte, ¡hay un montón de formas divertidas de cuidarla!</p>\n\n      <p><strong>Desafío de los 5 días:</strong> probá hacer una de estas\n      misiones cada día durante una semana:</p>\n\n      <ul>\n        <li>Día 1: Apagá la luz de cada cuarto cuando salgas de él.</li>\n        <li>Día 2: Aprovechá la luz del sol en vez de prender lámparas.</li>\n        <li>Día 3: Desenchufá los cargadores cuando no los uses.</li>\n        <li>Día 4: Cerrá bien la heladera (¡no la dejes abierta pensando!).</li>\n        <li>Día 5: Contale a tu familia un truco de ahorro que aprendiste hoy.</li>\n      </ul>\n\n      <p>Si toda tu familia participa, al final de la semana van a poder\n      compararla con la del mes anterior y ver cuánta energía ahorraron entre\n      todos. ¡Cada granito de arena suma!</p>\n    "
+    },
+    {
+      "slug": "jardin-con-material-reciclado",
+      "title": "Creá tu propio mini jardín con material reciclado",
+      "category": "Manualidades",
+      "date": "2026-06-10",
+      "emoji": "🌻",
+      "excerpt": "Con botellas, cajas de huevos y un poco de tierra puedes armar un jardín propio. ¡Te mostramos cómo, paso a paso!",
+      "content": "<p>¿Tenés botellas de plástico vacías o cajas de huevos por casa? ¡Son el\n      punto de partida perfecto para tu propio mini jardín!</p>\n\n      <p><strong>Vas a necesitar:</strong></p>\n      <ul>\n        <li>Una botella de plástico vacía y limpia</li>\n        <li>Tierra para macetas</li>\n        <li>Semillas (de albahaca, lechuga o flores son fáciles para empezar)</li>\n        <li>Tijeras (¡con ayuda de un adulto!)</li>\n        <li>Témperas o marcadores para decorar</li>\n      </ul>\n\n      <p><strong>Pasos:</strong></p>\n      <ul>\n        <li>1. Con ayuda de un adulto, cortá la botella por la mitad.</li>\n        <li>2. Decorá la parte de afuera como más te guste: ¡puede ser un\n        monstruito, un cohete o lo que imagines!</li>\n        <li>3. Llená la mitad inferior con tierra.</li>\n        <li>4. Hacé un pequeño pozo y colocá las semillas, después tapalas con\n        un poquito más de tierra.</li>\n        <li>5. Regá con cuidado y ubicá tu maceta cerca de una ventana con\n        sol.</li>\n      </ul>\n\n      <p>En unos días vas a empezar a ver brotes asomando. ¡Tomale fotos cada\n      semana para ver cómo crece tu jardín reciclado! 🌱</p>"
+    }
+  ],
+  "settings": {
+    "siteName": "EcoPeques",
+    "logoEmoji": "🌍",
+    "heroTitle": "Aventuras para cuidar nuestro planeta",
+    "heroText": "Cuentos, datos curiosos y manualidades para que cuidar la naturaleza sea parte del juego de todos los días.",
+    "aboutText": "¡Hola! Somos EcoPeques, un rincón pensado para que las infancias descubran, jugando, lo importante que es cuidar nuestro planeta.\n\nAcá vas a encontrar historias, datos curiosos sobre animales y plantas, ideas para ahorrar energía y manualidades para crear cosas nuevas con materiales que ya tenés en casa.",
+    "contactEmail": "hola@ecopeques.example",
+    "instagram": "",
+    "youtube": ""
+  }
+}

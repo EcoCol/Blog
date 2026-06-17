@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Panel de administración — EcoPeques</title>
+  <meta name="robots" content="noindex, nofollow">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;600;700;800&family=Quicksand:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="admin.css">
+</head>
+<body class="admin-body">
+  <header class="admin-header">
+    <div class="admin-header-inner">
+      <a href="index.html" class="logo">
+        <span class="logo-mark" aria-hidden="true">🌍</span>
+        <span class="logo-text">EcoPeques</span>
+        <span class="admin-badge">Panel</span>
+      </a>
+      <a href="index.html" class="admin-link-back">← Ver el blog</a>
+    </div>
+  </header>
+
+  <div class="admin-shell">
+    <nav class="admin-tabs" aria-label="Secciones del panel">
+      <button class="admin-tab is-active" data-tab="posts">📝 Publicaciones</button>
+      <button class="admin-tab" data-tab="categories">🗂️ Categorías</button>
+      <button class="admin-tab" data-tab="settings">⚙️ Configuración del blog</button>
+    </nav>
+
+    <main class="admin-main">
+
+      <!-- ============ TAB: LISTA DE POSTS ============ -->
+      <section class="admin-panel is-active" id="panel-posts">
+        <div class="admin-panel-head">
+          <div>
+            <h1>Publicaciones</h1>
+            <p class="admin-subtitle">Creá, editá o eliminá las entradas del blog.</p>
+          </div>
+          <button class="btn" id="btn-new-post">+ Nueva publicación</button>
+        </div>
+
+        <div id="posts-list" class="admin-posts-list"></div>
+      </section>
+
+      <!-- ============ TAB: EDITOR DE POST ============ -->
+      <section class="admin-panel" id="panel-editor">
+        <div class="admin-panel-head">
+          <div>
+            <h1 id="editor-title">Nueva publicación</h1>
+            <p class="admin-subtitle">Completá los datos y mirá la vista previa a la derecha.</p>
+          </div>
+          <button class="admin-link-back" id="btn-cancel-edit">← Volver a la lista</button>
+        </div>
+
+        <div class="editor-grid">
+          <form class="editor-form" id="post-form">
+            <input type="hidden" id="field-original-slug">
+
+            <div class="form-field">
+              <label for="field-title">Título</label>
+              <input type="text" id="field-title" required placeholder="Ej: Cómo cuidar las abejas">
+            </div>
+
+            <div class="form-field">
+              <label for="field-slug">Slug (identificador único en la URL)</label>
+              <input type="text" id="field-slug" required placeholder="ej: como-cuidar-las-abejas" pattern="[a-z0-9\-]+">
+              <p class="field-hint">Solo minúsculas, números y guiones. Se genera solo a partir del título, pero podés editarlo.</p>
+            </div>
+
+            <div class="form-row">
+              <div class="form-field">
+                <label for="field-category">Categoría</label>
+                <select id="field-category" required></select>
+              </div>
+
+              <div class="form-field">
+                <label for="field-date">Fecha</label>
+                <input type="date" id="field-date" required>
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="form-field">
+                <label for="field-emoji">Emoji del post</label>
+                <input type="text" id="field-emoji" maxlength="4" placeholder="🌱">
+              </div>
+
+              <div class="form-field">
+                <label for="field-image">Imagen de portada (opcional)</label>
+                <input type="text" id="field-image" placeholder="images/mi-foto.jpg">
+                <p class="field-hint">Subí la imagen a la carpeta <code>images/</code> del repositorio y escribí su ruta acá.</p>
+              </div>
+            </div>
+
+            <div class="form-field">
+              <label for="field-excerpt">Resumen corto</label>
+              <textarea id="field-excerpt" rows="2" required placeholder="1-2 frases que se ven en las tarjetas"></textarea>
+            </div>
+
+            <div class="form-field">
+              <label for="field-content">Contenido del post (HTML simple)</label>
+              <textarea id="field-content" rows="14" required placeholder="<p>Escribí el contenido del post acá...</p>"></textarea>
+              <p class="field-hint">Podés usar <code>&lt;p&gt;</code>, <code>&lt;strong&gt;</code>, <code>&lt;ul&gt;&lt;li&gt;</code> e <code>&lt;img src="images/foto.jpg" alt="..."&gt;</code>.</p>
+            </div>
+
+            <div class="editor-actions">
+              <button type="submit" class="btn">💾 Guardar publicación</button>
+              <button type="button" class="btn btn-secondary" id="btn-delete-post">🗑️ Eliminar</button>
+            </div>
+          </form>
+
+          <aside class="editor-preview">
+            <p class="preview-label">Vista previa</p>
+            <div class="preview-frame" id="preview-frame"></div>
+          </aside>
+        </div>
+      </section>
+
+      <!-- ============ TAB: CATEGORÍAS ============ -->
+      <section class="admin-panel" id="panel-categories">
+        <div class="admin-panel-head">
+          <div>
+            <h1>Categorías</h1>
+            <p class="admin-subtitle">Definen los temas y colores de acento del blog.</p>
+          </div>
+          <button class="btn" id="btn-new-category">+ Nueva categoría</button>
+        </div>
+
+        <div id="categories-list" class="admin-categories-list"></div>
+      </section>
+
+      <!-- ============ TAB: CONFIGURACIÓN ============ -->
+      <section class="admin-panel" id="panel-settings">
+        <div class="admin-panel-head">
+          <div>
+            <h1>Configuración del blog</h1>
+            <p class="admin-subtitle">Datos generales que aparecen en distintas partes del sitio.</p>
+          </div>
+        </div>
+
+        <form class="editor-form settings-form" id="settings-form">
+          <div class="form-field">
+            <label for="setting-site-name">Nombre del blog</label>
+            <input type="text" id="setting-site-name" placeholder="EcoPeques">
+          </div>
+
+          <div class="form-field">
+            <label for="setting-logo-emoji">Emoji del logo</label>
+            <input type="text" id="setting-logo-emoji" maxlength="4" placeholder="🌍">
+          </div>
+
+          <div class="form-field">
+            <label for="setting-hero-title">Título del Inicio (hero)</label>
+            <input type="text" id="setting-hero-title" placeholder="Aventuras para cuidar nuestro planeta">
+          </div>
+
+          <div class="form-field">
+            <label for="setting-hero-text">Texto del Inicio (hero)</label>
+            <textarea id="setting-hero-text" rows="2"></textarea>
+          </div>
+
+          <div class="form-field">
+            <label for="setting-about-text">Texto de "Sobre mí"</label>
+            <textarea id="setting-about-text" rows="6"></textarea>
+            <p class="field-hint">Separá los párrafos con una línea en blanco.</p>
+          </div>
+
+          <div class="form-row">
+            <div class="form-field">
+              <label for="setting-contact-email">Email de contacto</label>
+              <input type="email" id="setting-contact-email" placeholder="hola@ecopeques.example">
+            </div>
+            <div class="form-field">
+              <label for="setting-instagram">Link de Instagram</label>
+              <input type="text" id="setting-instagram" placeholder="https://instagram.com/...">
+            </div>
+          </div>
+
+          <div class="form-field">
+            <label for="setting-youtube">Link de YouTube</label>
+            <input type="text" id="setting-youtube" placeholder="https://youtube.com/...">
+          </div>
+
+          <div class="editor-actions">
+            <button type="submit" class="btn">💾 Guardar configuración</button>
+          </div>
+        </form>
+      </section>
+
+    </main>
+  </div>
+
+  <!-- ============ MODAL: EXPORTAR / DESCARGAR ============ -->
+  <div class="modal-overlay" id="export-modal">
+    <div class="modal-box">
+      <h2 id="export-modal-title">Cambios guardados en este navegador</h2>
+      <p id="export-modal-text">
+        Para publicarlos en el blog real, descargá el archivo actualizado y
+        subilo a tu repositorio (reemplazando el archivo existente).
+      </p>
+      <div class="modal-actions">
+        <button class="btn" id="btn-download-file">⬇️ Descargar posts.json</button>
+        <button class="btn btn-secondary" id="btn-close-modal">Cerrar</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="toast" id="toast"></div>
+
+  <script src="admin.js"></script>
+</body>
+</html>
