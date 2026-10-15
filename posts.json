@@ -1,0 +1,59 @@
+{
+  "categories": [
+    {
+      "name": "Naturaleza",
+      "color": "sky",
+      "emoji": "💧"
+    }
+  ],
+  "posts": [
+    {
+      "slug": "dia-mundial-del-medio-ambiente",
+      "title": "Día Mundial del Medio Ambiente",
+      "category": "Naturaleza",
+      "date": "2026-06-05",
+      "emoji": "🌱",
+      "excerpt": "Los estudiantes descubrieron la importancia de cuidar el medio ambiente mediante expresiones artísticas y reflexiones en el aula.",
+      "content": "<div style=\"display:flex; gap:14px; overflow-x:auto; scroll-snap-type:x mandatory; padding-bottom:12px; margin-bottom:20px; -webkit-overflow-scrolling:touch;\"><img src=\"images/5_junio/1.jpg\" alt=\"Día del Medio Ambiente 1\" style=\"flex:0 0 85%; max-height:420px; object-fit:cover; border-radius:16px; scroll-snap-align:center; box-shadow:0 6px 18px rgba(0,0,0,0.12);\"><img src=\"images/5_junio/2.jpg\" alt=\"Día del Medio Ambiente 2\" style=\"flex:0 0 85%; max-height:420px; object-fit:cover; border-radius:16px; scroll-snap-align:center; box-shadow:0 6px 18px rgba(0,0,0,0.12);\"><img src=\"images/5_junio/3.jpg\" alt=\"Día del Medio Ambiente 3\" style=\"flex:0 0 85%; max-height:420px; object-fit:cover; border-radius:16px; scroll-snap-align:center; box-shadow:0 6px 18px rgba(0,0,0,0.12);\"></div><p style=\"text-align:center; font-size:0.85rem; color:#6fcf6e; font-weight:700; margin-top:-10px; margin-bottom:18px;\">👉 Desliza para ver más fotos 👈</p><p><strong>5 de Junio: DIA MUNDIAL DEL MEDIO AMBIENTE.</strong></p><p>Los niños y niñas descubrieron la importancia de cuidar y preservar el medio ambiente a través del arte mediante una ficha alusiva, al mismo tiempo los docentes en sus aulas socializaron y dialogaron con los estudiantes sobre el tema.</p>"
+    },
+    {
+      "slug": "dia-mundial-del-reciclaje-feria-verde",
+      "title": "Día Mundial del Reciclaje: Feria Verde LIDEBOL",
+      "category": "Naturaleza",
+      "date": "2026-05-17",
+      "emoji": "♻️",
+      "excerpt": "Creatividad y recursividad en la Feria Verde LIDEBOL con proyectos en cartón, plástico y papel elaborados por los estudiantes.",
+      "content": "<div style=\"display:flex; gap:14px; overflow-x:auto; scroll-snap-type:x mandatory; padding-bottom:12px; margin-bottom:20px; -webkit-overflow-scrolling:touch;\"><img src=\"images/17_mayo/1.jpg\" alt=\"Feria Verde 1\" style=\"flex:0 0 85%; max-height:420px; object-fit:cover; border-radius:16px; scroll-snap-align:center; box-shadow:0 6px 18px rgba(0,0,0,0.12);\"><img src=\"images/17_mayo/2.jpg\" alt=\"Feria Verde 2\" style=\"flex:0 0 85%; max-height:420px; object-fit:cover; border-radius:16px; scroll-snap-align:center; box-shadow:0 6px 18px rgba(0,0,0,0.12);\"><img src=\"images/17_mayo/3.jpg\" alt=\"Feria Verde 3\" style=\"flex:0 0 85%; max-height:420px; object-fit:cover; border-radius:16px; scroll-snap-align:center; box-shadow:0 6px 18px rgba(0,0,0,0.12);\"></div><p style=\"text-align:center; font-size:0.85rem; color:#6fcf6e; font-weight:700; margin-top:-10px; margin-bottom:18px;\">👉 Desliza para ver más fotos 👈</p><p><strong>17 de Mayo: DIA MUNDIAL DEL RECICLAJE.<br>&quot;FERIA VERDE LIDEBOL&quot;.</strong></p><p>Un desborde de creatividad y recursividad por parte de los estudiantes con apoyo de los docentes, se llevó a cabo en la institución con motivo del Día Mundial del reciclaje, diversos materiales como cartón, plástico, papel, entre otros fueron protagonistas en nuestra feria que fue todo un éxito. Gracias a todos por su apoyo y compromiso con el planeta.</p>"
+    },
+    {
+      "slug": "dia-de-la-tierra",
+      "title": "Día de la Tierra: Mural Artístico",
+      "category": "Naturaleza",
+      "date": "2026-04-22",
+      "emoji": "🌍",
+      "excerpt": "A través de un mural artístico, los niños y niñas de la Institución aportaron su creatividad para conmemorar el Día de la Tierra.",
+      "content": "<div style=\"display:flex; gap:14px; overflow-x:auto; scroll-snap-type:x mandatory; padding-bottom:12px; margin-bottom:20px; -webkit-overflow-scrolling:touch;\"><img src=\"images/22_abril/1.jpeg\" alt=\"Día de la Tierra 1\" style=\"flex:0 0 85%; max-height:420px; object-fit:cover; border-radius:16px; scroll-snap-align:center; box-shadow:0 6px 18px rgba(0,0,0,0.12);\"><img src=\"images/22_abril/2.jpeg\" alt=\"Día de la Tierra 2\" style=\"flex:0 0 85%; max-height:420px; object-fit:cover; border-radius:16px; scroll-snap-align:center; box-shadow:0 6px 18px rgba(0,0,0,0.12);\"><img src=\"images/22_abril/3.jpeg\" alt=\"Día de la Tierra 3\" style=\"flex:0 0 85%; max-height:420px; object-fit:cover; border-radius:16px; scroll-snap-align:center; box-shadow:0 6px 18px rgba(0,0,0,0.12);\"><img src=\"images/22_abril/4.jpeg\" alt=\"Día de la Tierra 4\" style=\"flex:0 0 85%; max-height:420px; object-fit:cover; border-radius:16px; scroll-snap-align:center; box-shadow:0 6px 18px rgba(0,0,0,0.12);\"></div><p style=\"text-align:center; font-size:0.85rem; color:#6fcf6e; font-weight:700; margin-top:-10px; margin-bottom:18px;\">👉 Desliza para ver más fotos 👈</p><p><strong>22 de Abril: &quot;DIA DE LA TIERRA&quot;</strong></p><p>Nuestro planeta necesita verdaderos héroes dispuestos a realizar acciones que contribuyan a salvar y recuperar el medio ambiente. A través de una obra artística (mural) los niños y niñas de la Institución con apoyo de los docentes realizaron su aporte colocando su granito de arena y creatividad.</p>"
+    },
+
+    {
+      "slug": "dia-distrital-del-medio-ambiente",
+      "title": "Día Distrital del Medio Ambiente: Detectives Ecológicos",
+      "category": "Naturaleza",
+      "date": "2026-02-26",
+      "emoji": "🔍",
+      "excerpt": "La comunidad educativa participó en la dinámica 'Detectives ecológicos', buscando pistas y clasificando acciones para crear conciencia ambiental.",
+      "content": "<div style=\"display:flex; gap:14px; overflow-x:auto; scroll-snap-type:x mandatory; padding-bottom:12px; margin-bottom:20px; -webkit-overflow-scrolling:touch;\"><img src=\"images/26_febrero/1.jpeg\" alt=\"Detectives ecológicos 1\" style=\"flex:0 0 85%; max-height:420px; object-fit:cover; border-radius:16px; scroll-snap-align:center; box-shadow:0 6px 18px rgba(0,0,0,0.12);\"><img src=\"images/26_febrero/2.jpeg\" alt=\"Detectives ecológicos 2\" style=\"flex:0 0 85%; max-height:420px; object-fit:cover; border-radius:16px; scroll-snap-align:center; box-shadow:0 6px 18px rgba(0,0,0,0.12);\"><img src=\"images/26_febrero/3.jpeg\" alt=\"Detectives ecológicos 3\" style=\"flex:0 0 85%; max-height:420px; object-fit:cover; border-radius:16px; scroll-snap-align:center; box-shadow:0 6px 18px rgba(0,0,0,0.12);\"></div><p style=\"text-align:center; font-size:0.85rem; color:#6fcf6e; font-weight:700; margin-top:-10px; margin-bottom:18px;\">👉 Desliza para ver más fotos 👈</p><p><strong>26 de Febrero: &quot;DIA DISTRITAL DEL MEDIO AMBIENTE&quot;</strong></p><p>La comunidad educativa hace presencia mediante una dinámica denominada: &quot;Detectives ecologicos&quot;, buscando pistas y clasificando acciones relacionadas con el medio ambiente; de esta manera creamos conciencia ecológica y sentido de pertenencia por el entorno q nos rodea.</p>"
+    }
+  ],
+  "settings": {
+    "siteName": "Institución Educativa Liceo de Bolivar",
+    "siteSubtitle": "Sede Distrital La Paz",
+    "logoEmoji": "🌍",
+    "heroTitle": "Amigos verdes por el cuidado del Medio Ambiente.",
+    "heroText": "Aventuras para cuidar nuestro planeta",
+    "aboutText": "¡Bienvenidos al espacio ambiental de la Institución Educativa Liceo de Bolívar, Sede Distrital La Paz!\n\nA través de nuestra iniciativa &quot;Amigos Verdes&quot;, promovemos la conciencia ecológica, el respeto por la naturaleza y el cuidado de los recursos naturales desde las aulas de clase.\n\nEn este blog compartimos las actividades pedagógicas, puestas en escena y proyectos liderados por nuestros estudiantes y docentes para inspirar a toda la comunidad educativa a cuidar nuestro entorno.",
+    "contactEmail": "",
+    "instagram": "",
+    "youtube": ""
+  }
+}
