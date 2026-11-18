@@ -52,6 +52,15 @@
       "emoji": "🔬",
       "excerpt": "En el cierre del Proyecto PRAE y la semana cultural Lidebol, los estudiantes presentaron grandes experimentos y proyectos científicos.",
       "content": "<div style=\"display:flex; gap:14px; overflow-x:auto; scroll-snap-type:x mandatory; padding-bottom:12px; margin-bottom:20px; -webkit-overflow-scrolling:touch;\"><img src=\"images/13_octubre/1.jpeg\" alt=\"Expo Ciencia 1\" style=\"flex:0 0 85%; max-height:420px; object-fit:cover; border-radius:16px; scroll-snap-align:center; box-shadow:0 6px 18px rgba(0,0,0,0.12);\"><img src=\"images/13_octubre/2.jpeg\" alt=\"Expo Ciencia 2\" style=\"flex:0 0 85%; max-height:420px; object-fit:cover; border-radius:16px; scroll-snap-align:center; box-shadow:0 6px 18px rgba(0,0,0,0.12);\"><img src=\"images/13_octubre/3.jpeg\" alt=\"Expo Ciencia 3\" style=\"flex:0 0 85%; max-height:420px; object-fit:cover; border-radius:16px; scroll-snap-align:center; box-shadow:0 6px 18px rgba(0,0,0,0.12);\"><img src=\"images/13_octubre/4.jpeg\" alt=\"Expo Ciencia 4\" style=\"flex:0 0 85%; max-height:420px; object-fit:cover; border-radius:16px; scroll-snap-align:center; box-shadow:0 6px 18px rgba(0,0,0,0.12);\"><img src=\"images/13_octubre/5.jpeg\" alt=\"Expo Ciencia 5\" style=\"flex:0 0 85%; max-height:420px; object-fit:cover; border-radius:16px; scroll-snap-align:center; box-shadow:0 6px 18px rgba(0,0,0,0.12);\"></div><p style=\"text-align:center; font-size:0.85rem; color:#6fcf6e; font-weight:700; margin-top:-10px; margin-bottom:18px;\">👉 Desliza para ver más fotos 👈</p><p><strong>13 de Octubre: &quot;EXPO CIENCIA&quot;</strong></p><p>En nuestra actividad de cierre del Proyecto PRAE, apreciamos la creatividad, ingenio y recursividad de los estudiantes con apoyo de todos los docentes para la realización de nuestra Feria científica en el marco de la semana cultural Lidebol.</p><p>Grandes experimentos y proyectos que demuestran una vez mas el talento y dedicación de todos los participantes y el compromiso con el cuidado de nuestro planeta. Felicidades a todos (as)!!!</p>"
+    },
+    {
+      "slug": "dia-mundial-del-agua",
+      "title": "Conmemoración del Día Mundial del Agua",
+      "category": "Naturaleza",
+      "date": "2026-03-22",
+      "emoji": "💧",
+      "excerpt": "Los estudiantes del grado T02 presentaron una obra especial para destacar la importancia de cuidar el agua.",
+      "content": "<video controls width=\"100%\" style=\"border-radius: 16px; margin-bottom: 20px; max-height: 480px; width: 100%; background: #000;\"><source src=\"videos/video_agua.mp4\" type=\"video/mp4\">Tu navegador no soporta el formato de video.</video><p>El 22 de Marzo conmemoración en nuestra Institución el &quot;DIA MUNDIAL DEL AGUA&quot;, con la participación de los estudiantes del grado T02 ; quienes nos deleitaron con una puesta en escena para resaltar la importancia de este recurso tan valioso.</p>"
     }
   ],
   "settings": {
